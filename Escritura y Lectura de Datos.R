@@ -32,4 +32,9 @@ dput(y)
 dput(y, file="~/GitHub/Software_Actuarial_lll/y.R")
 
 # 4. Genero un nuevo objeto a partir de la info guardada
-y2 <- 
+# y2 <- 
+
+x<- data.frame(d=2, j="m")
+x
+dput(x)
+dput(x, file="~/Actuaría LV/Progra lll/Software_Actuarial_lll/x.R")
