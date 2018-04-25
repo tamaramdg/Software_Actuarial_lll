@@ -1,13 +1,19 @@
-completos<- function(specdata, id=1:332){
-  suma=0
-  for (i in id){
-    for (1 in row){
-      if is.na(fila)
-    suma=suma
-    else if 
-    suma=suma+1
+
+setwd("~/Actuaría LV/Progra lll/specdata")
+specdata<- setwd("~/Actuaría LV/Progra lll/specdata")
+
+
+  completos <- function(directorio, id = 1:332){
+    
+    foo <- numeric()
+    
+    for (n in id){
+      bar <- read.csv(paste(directorio, "/", formatC(n, width = 3, flag = "0"),".CSV", sep = ""))
+      
+      foo <-c(foo, sum(complete.cases(bar)))
+      
+      
     }
-    data.frame(id, suma, rownames="ID", "nobs")
+    return(data.frame(id, foo))
   }
-}
-  
+  completos("specdata", 1:332)
