@@ -1,4 +1,3 @@
-
 setwd("~/Actuaría LV/Progra lll/specdata")
 specdata<- setwd("~/Actuaría LV/Progra lll/specdata")
 
@@ -17,9 +16,5 @@ mediacontaminante<-function(specdata, contaminante="sulfate", id=1:332 ){
     media
   }
 }
-  
-  mediacontaminante("specdata", contaminante= "sulfate", id= 1:332)
-  
-  
 
-  
+mediacontaminante("specdata", contaminante= "sulfate", id= 1:332)
